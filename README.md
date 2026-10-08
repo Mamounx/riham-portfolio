@@ -46,10 +46,28 @@ vite.config.ts          # MPA config; bundled JS/CSS -> dist/static, images -> d
 - **SEO** — title/description, Open Graph + Twitter cards, canonical URL,
   JSON-LD (`Person`, `ProfessionalService`, `WebSite`), descriptive `alt` text,
   `sitemap.xml` + `robots.txt`.
-- **QR contact** — generated client-side, bundled (no external request).
+- **Branded QR codes** — generated client-side as inline SVG with rounded
+  modules + terracotta "eyes" to match the brand. The **footer** QR saves a new
+  phone contact (vCard, with the avatar attached via `PHOTO;VALUE=URI`); the
+  **contact-card** QR opens the live site. Both are verified-scannable.
+
+## Contact-card exports (`exports/`)
+Pre-rendered deliverables of the business card:
+`contact-card-front.png`, `contact-card-back.png` (2100×1200) and
+`contact-card.pdf` (two pages, 3.5 × 2 in). Regenerate after edits by serving
+`dist/` and running the headless-Chrome export (see repo history), or just
+re-screenshot `contact-card.html`.
+
+## Live URL / avatar
+The QRs and vCard avatar point to **`https://riham-portfolio.netlify.app`**
+(set once in `src/qr.ts` → `SITE`). The vCard avatar is fetched from
+`/assets/portrait.jpg` on that host when the contact is saved, so the site must
+be live there for the photo to attach (photo-on-save support varies by phone).
+The rest of the SEO still uses the `https://riham-portfolio.netlify.app` placeholder —
+point both at the same final domain when you have one.
 
 ## ⚠️ Before going live: set the real domain
-The site uses the placeholder **`https://www.rihamelmakki.com`**. Find-and-replace
+The site uses the placeholder **`https://riham-portfolio.netlify.app`**. Find-and-replace
 it in `index.html`, `contact-card.html`, `public/sitemap.xml`, `public/robots.txt`,
 then submit the sitemap in [Google Search Console](https://search.google.com/search-console).
 

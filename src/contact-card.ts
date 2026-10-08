@@ -1,5 +1,6 @@
 import './card.css';
-import { renderQR } from './qr';
+import { renderLinkQR } from './qr';
 
+// Contact-card QR → open the live portfolio website.
 const qrEl = document.getElementById('qrimg') as HTMLImageElement | null;
-if (qrEl) renderQR(qrEl, 10);
+if (qrEl) renderLinkQR(qrEl);

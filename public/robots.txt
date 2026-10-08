@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rihamelmakki.com/sitemap.xml
+Sitemap: https://riham-portfolio.netlify.app/sitemap.xml
