@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.rihamelmakki.com/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://www.rihamelmakki.com/assets/r4_living.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.rihamelmakki.com/assets/portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.rihamelmakki.com/assets/r1_11.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.rihamelmakki.com/assets/r3_11.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.rihamelmakki.com/assets/c_fac2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.rihamelmakki.com/assets/c_dine1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.rihamelmakki.com/assets/c_lob1.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.rihamelmakki.com/contact-card.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
